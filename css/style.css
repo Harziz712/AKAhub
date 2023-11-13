@@ -291,6 +291,12 @@ margin:0 10px;
    
 }
 
+#hero{
+    height: 900px ;
+    margin: 0;
+    padding: 0;
+}
+
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
     right: 0;
@@ -298,7 +304,8 @@ margin:0 10px;
     left: 0;
     overflow-x: hidden;
     width: 100%;
-    height: 46%;
+    object-fit: cover;
+    height: 800px;
    
 
   }
@@ -310,9 +317,15 @@ margin:0 10px;
     color: #f1f1f1;
     width: 90%;
     padding: 10px;
-    position: absolute;
-    bottom: 20%;
-    margin: 0 5%;
+    /* position: absolute;
+    bottom: 20%; */
+    position: relative;
+    margin: 0 ;
+    left: 55%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -180%);
+    white-space: nowrap;
   }
   
   /* Style the button used to pause/play the video */
@@ -357,16 +370,16 @@ margin:0 10px;
 
   .herotex h2{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     margin: 2% 0;
     color: whitesmoke;
   }
 
   .herotex h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 25px;
-    margin: 2% 0;
+    margin-bottom: 3% ;
     color: whitesmoke;
 
   }
@@ -376,7 +389,7 @@ margin:0 10px;
     justify-content: space-around;
     width: 90%;
     text-align: center;
-    margin: 30px 0;
+    margin: 0;
   }
   .los{
     display: flex;
@@ -415,6 +428,7 @@ margin:0 10px;
 .showbox img{
     width: 320px;
     height: 400px;
+    
     /* filter: contrast(0.7); */
     filter:invert(0.2);
     z-index: 0;
@@ -775,7 +789,7 @@ hr{
     padding: 10px 20px;
     background-color:rgb(3, 58, 102);
     margin-top: 5px;
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
     font-weight: bold;
     align-items: center;
 
@@ -784,6 +798,9 @@ hr{
 .a:hover{ 
     color:rgb(3, 58, 102) ;
     background-color: rgb(193, 193, 194);
+    border: 2px solid rgb(3, 38, 68) ;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .io{
@@ -833,6 +850,7 @@ hr{
 
     to {
         bottom: 0;
+        box-shadow:0px 7px 10px rgb(60, 60, 60) ;
 
 }
  }
