@@ -11,10 +11,10 @@
         <section id="Hero">
             <header>
                 <div class="headlinks">
-                    <div id="navlink-toggle"><span  class="spa">&#x2630;</span></div>
+                    <span id="navlink_toggle">&#x2630;</span>
                     <h3 class="logo">AKA</h3>
                     <div class="navbar">
-                        <ul>
+                        <ul class="navv">
                             <li><a href="#">EVERYTHING</a>
                                 <div class="for-everything-ddnavbar">
                                     <ul>
@@ -74,8 +74,10 @@
                     </nav>
                     <div  class="icons"> 
                         <a href="#"> $0.00</a>
+                        <div class="ico">
                         <a href="#"><ion-icon name="bag-outline"></ion-icon></a>
                         <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+                    </div>
                     </div>
                 </div>
             
@@ -430,7 +432,7 @@
             
                 </div>
 
-                <div class="categ_Contain">
+                <div class="categ_Contain" id="phonno">
                     <div class="categ_Box">
                         <div class="categ_img">
                             <img src="asset/jewe1.png" alt="">
@@ -578,7 +580,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, odio. Voluptatum delectus adipisci <br>
             consequatur eum eaque illum esse quo dolorem in tempore eius odio, laborum et, ea nesciunt rem! Ea.</p>
         
-            <h3 style="margin-bottom: 2%;"> Get 30% Discount on every Sneekers you buy, Use Code OFF20</h3>
+            <h3 style="margin-bottom: 2%;"> Get 30% Discount on every Coat you buy, Use Code OFF20</h3>
 
             <a href="#"  class="buth1" > SHOP NOW </a>
 
@@ -624,29 +626,29 @@
             <img src="asset/world.png" alt="">
             <h3>Worldwide Shopping</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                 Est sit voluptas amet necessitatibus atque inventore dolorum et qui itaque</p>
+                 Est sit voluptas amet </p>
         </div>
 
         <div class="credi">
             <img src="asset/mannequin.png" alt="">
             <h3>Best Quality</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                 Est sit voluptas amet necessitatibus atque inventore dolorum et qui itaque</p>
+                Est sit voluptas amet </p>
         </div>
 
         <div class="credi">
             <img src="asset/price-tag.png" alt="">
             <h3>Best Offers</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                 Est sit voluptas amet necessitatibus atque inventore dolorum et qui itaque</p>
+                Est sit voluptas amet </p>
         </div>
 
         <div class="credi">
             <img src="asset/padlock.png" alt="">
             <h3>Secure Payments</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                 Est sit voluptas amet necessitatibus atque inventore dolorum et qui itaque</p>
-        </div>
+                Est sit voluptas amet </p>
+            </div>
 
 
     </div>
@@ -660,8 +662,8 @@
     <hr>
 
     <div class="midfoot">
-        <div class="mid">
-            <h3 class="logo" style="color: black;">AKA</h3>
+        <div class="mid2">
+            <h3 class="logo">AKA</h3>
 
             <h4 class="footname">The best look anytime, anywhere.</h4>
         
@@ -696,9 +698,9 @@
             <h4 class="mid4"> Newsletter</h4>
             <li>Subscribe to our Newsletterto recieve latest news on our services</li>
         <fieldset  id="Newsletter" style="border: none;">
-            <input type="email" placeholder="example@email.com" name="email" class="input" id="new_recommendation" />
+            <input type="email" placeholder="example@email.com" name="email" class="input" id="new_email" />
            
-           <button class="a" id="recommend_btn" onclick="addRecommendation()"  >Subscribe<ion-icon name="arrow-forward-outline" class="io"></ion-icon></button> 
+           <button class="a" id="email_btn"  >Subscribe<ion-icon name="arrow-forward-outline" class="io"></ion-icon></button> 
            </fieldset>
         </div>
     </div>
@@ -733,7 +735,7 @@
           <div class="popup" id="popup" class="flex_center">
             <img src="asset/checkmark--outline.svg"/>
             <h3>Thanks for signing up to our Newsletter!</h3>
-            <button onclick="showPopup(false)">Ok</button>
+            <button id="confirmbtn" >Ok</button>
           </div>
 
 
